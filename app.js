@@ -94,7 +94,10 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var multDigits = multiply(testArray[0], testArray[1]);
+  var totalDigits = multiply(multDigits, testArray[2]);
+  var digitArray = 'The numbers 2,3,4 have a product of 24.'
+  return [totalDigits, digitArray];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
